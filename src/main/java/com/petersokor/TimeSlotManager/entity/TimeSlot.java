@@ -3,7 +3,6 @@ package com.petersokor.TimeSlotManager.entity;
 import jakarta.persistence.*;
 import java.time.DayOfWeek;
 import java.time.LocalTime;
-import java.util.List;
 
 /*
   This class representing a booking in the TimeSlotManager application.
@@ -18,15 +17,20 @@ public class TimeSlot {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-//    @OneToMany(mappedBy = "timeSlot")
-//    private List<Booking> bookings;
-    @Transient
-    private List<Booking> bookings;
 
+    @Column(name = "name")
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     private DayOfWeek dayOfWeek;
     private LocalTime startTime;
-    private LocalTime endTime;
     private String status;
     @Transient
     private boolean occupied;
@@ -37,10 +41,6 @@ public class TimeSlot {
 
     public void setOccupied(boolean occupied) {
         this.occupied = occupied;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public Long getId() {
@@ -59,32 +59,11 @@ public class TimeSlot {
         return dayOfWeek;
     }
 
-    public void setDayOfWeek(DayOfWeek dayOfWeek) {
-        this.dayOfWeek = dayOfWeek;
-    }
 
     public LocalTime getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(LocalTime startTime) {
-        this.startTime = startTime;
     }
 
-    public LocalTime getEndTime() {
-        return endTime;
-    }
-
-    public void setEndTime(LocalTime endTime) {
-        this.endTime = endTime;
-    }
-
-    public List<Booking> getBookings() {
-        return bookings;
-    }
-
-    public void setBookings(List<Booking> bookings) {
-        this.bookings = bookings;
-    }
-}
 

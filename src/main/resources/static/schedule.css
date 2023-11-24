@@ -1,0 +1,22 @@
+/* schedule.css */
+
+table {
+    width: 45%;
+    margin-top: 20px;
+}
+
+tr, th, td {
+    border-bottom: 1px solid darkslategray;
+    padding: 8px;
+    text-align: left;
+}
+
+.green-text {
+    color: #047b38;
+}
+
+.red-text {
+    color: #e4075e;
+}
+
+

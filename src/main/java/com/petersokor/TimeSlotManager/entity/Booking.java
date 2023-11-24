@@ -1,6 +1,7 @@
 package com.petersokor.TimeSlotManager.entity;
 
 import jakarta.persistence.*;
+
 @Entity
 public class Booking {
     @Id
@@ -10,20 +11,16 @@ public class Booking {
     @ManyToOne
     @JoinColumn(name = "slot_id")
     private TimeSlot timeSlot;
+    @Column(name = "userName")
+    private String userName;
+
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 
     public void setTimeSlot(TimeSlot timeSlot) {
         this.timeSlot = timeSlot;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public TimeSlot getTimeSlot() {
-        return timeSlot;
-    }
 }

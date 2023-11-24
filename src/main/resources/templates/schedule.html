@@ -1,0 +1,42 @@
+<!--schedule.html-->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson Schedule</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="schedule.css">
+</head>
+
+<body>
+<table>
+
+    <thead>
+    <tr>
+        <th>Lessons schedule</th>
+    </tr>
+    <tr>
+        <th>Day</th>
+        <th>Start Time</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr th:each="slot, dayIndex : ${allTimeSlots}">
+        <td th:if="${dayIndex.index % 4 == 0}" th:attr="rowspan=4" th:text="${slot.dayOfWeek}"></td>
+        <td th:text="${slot.startTime}"></td>
+        <td th:class="${slot.status eq 'free'} ? 'green-text' : (${slot.status eq 'booked'} ? 'red-text' : '')" th:text="${slot.status}"></td>
+        <td>
+            <form th:action="@{/booking/book/{slotId}(slotId=${slot.id})}" method="post">
+                <label for="username">your name:</label>
+                <input type="text" id="username" name="username" required>
+                <button type="submit">Book</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

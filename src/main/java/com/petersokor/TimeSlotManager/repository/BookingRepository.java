@@ -12,6 +12,5 @@ also acts as a DAO
  */
 @Repository
 public interface BookingRepository extends JpaRepository<Booking, Long> {
-
     boolean existsByTimeSlot(TimeSlot timeSlot);
 }

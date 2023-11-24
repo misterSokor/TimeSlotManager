@@ -1,0 +1,18 @@
+/* main.css */
+
+body {
+    background: paleturquoise;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+}
