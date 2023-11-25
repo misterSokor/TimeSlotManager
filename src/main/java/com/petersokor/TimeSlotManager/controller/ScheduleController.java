@@ -39,4 +39,12 @@ public class ScheduleController {
 
             return "schedule";
         }
+
+        // this method is used to bring full list of users who booked the lesson
+        @GetMapping("/booking/allTimeSlots")
+        public String showAllTimeSlots(Model model) {
+            List<TimeSlot> listOfUsers = bookingService.getAllSlotsWithAvailability();
+            model.addAttribute("listOfUsers", listOfUsers);
+            return "listOfUsers";
+        }
     }

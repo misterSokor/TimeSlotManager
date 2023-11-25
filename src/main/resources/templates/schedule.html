@@ -1,20 +1,21 @@
-<!--schedule.html-->
+<!-- schedule.html -->
+
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Lesson Schedule</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" type="text/css" href="schedule.css">
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <link rel="stylesheet" type="text/css" href="/schedule.css">
 </head>
 
 <body>
 <table>
-
+    <caption>
+        <h1>Lesson Schedule</h1>
+        <a th:href="@{/booking/allTimeSlots}">List of booked slots</a>
+    </caption>
     <thead>
-    <tr>
-        <th>Lessons schedule</th>
-    </tr>
     <tr>
         <th>Day</th>
         <th>Start Time</th>
@@ -23,7 +24,6 @@
     </tr>
     </thead>
     <tbody>
-
     <tr th:each="slot, dayIndex : ${allTimeSlots}">
         <td th:if="${dayIndex.index % 4 == 0}" th:attr="rowspan=4" th:text="${slot.dayOfWeek}"></td>
         <td th:text="${slot.startTime}"></td>

@@ -1,0 +1,12 @@
+/*listOfUsers.css*/
+
+table {
+    width: 45%;
+    margin-top: 20px;
+}
+
+tr, th, td {
+    border-bottom: 1px solid darkslategray;
+    padding: 8px;
+    text-align: left;
+}

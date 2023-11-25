@@ -1,0 +1,38 @@
+<!--listOfUsers.html-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List of booked Slots</title>
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <link rel="stylesheet" type="text/css" href="/listOfUsers.css">
+</head>
+
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>List of booked slots</th>
+    </tr>
+    <tr>
+        <th>Day</th>
+        <th>Start Time</th>
+<!--        <th>Status</th>-->
+        <th>Username</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr
+
+        th:each="slot, dayIndex : ${listOfUsers}">
+        <td th:if="${dayIndex.index % 4 == 0}" th:attr="rowspan=4" th:text="${slot.dayOfWeek}"></td>
+        <td th:text="${slot.startTime}"></td>
+<!--        <td th:text="${slot.status}"></td>-->
+        <td th:text="${slot.name}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
