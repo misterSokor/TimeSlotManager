@@ -6,12 +6,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 25px;
     margin: 0;
 }
 
 @media (max-width: 768px) {
     table {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    td form input[type="text"] {
+        width: 200%;
+        font-size: 20px;
+        margin: 0;
     }
 }

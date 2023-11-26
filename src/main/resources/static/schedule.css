@@ -1,13 +1,13 @@
 /* schedule.css */
 
 table {
-    width: 45%;
+    width: 65%;
     margin-top: 20px;
 }
 
 tr, th, td {
     border-bottom: 1px solid darkslategray;
-    padding: 8px;
+    padding: 0;
     text-align: left;
 }
 
