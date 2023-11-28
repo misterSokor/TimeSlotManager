@@ -4,6 +4,7 @@
 
 The "TimeSlotManager" project is a web application designed for managing class schedules. It provides the ability to book available time slots and display the schedule of classes.
 
+
 ## Technologies and Tools:
 
 - **Programming Language:** Java
@@ -13,6 +14,9 @@ The "TimeSlotManager" project is a web application designed for managing class s
 - **Frontend:** Thymeleaf (HTML templating)
 - **Database Management System:** MySQL
 - **Framework:** Spring Boot
+
+![Page where students can book time slot](screenshots/PageWhereStudentsCanBookTimeSlot.png)
+![Page where the teacher can see list of people who booked time for a lesson](screenshots/PageWhereTeacherCanSeeListOfPeopleWhoBookedTime.png)
 
 ## Project Components:
 
@@ -70,4 +74,3 @@ The "TimeSlotManager" project is a web application designed for managing class s
    
 4. ** Deploy on AWS **
     - To deploy this project on AWS BeansTalk and send link to other students
-
