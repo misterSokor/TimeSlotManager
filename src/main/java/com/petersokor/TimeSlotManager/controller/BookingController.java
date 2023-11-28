@@ -47,5 +47,4 @@ public class BookingController {
         bookingService.bookTimeSlot(slotId, username);
         return "redirect:/schedule";
     }
-
 }
