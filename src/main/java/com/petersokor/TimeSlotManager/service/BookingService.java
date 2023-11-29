@@ -36,7 +36,7 @@ public class BookingService {
     public List<TimeSlot> getAllAvailableTimeSlots() {
         return timeSlotRepository.findByStatus("free");
     }
-    public List<TimeSlot> getAllSlotsWithAvailability() {
+    public List<TimeSlot> getAllSlots() {
         List<TimeSlot> allTimeSlots = timeSlotRepository.findAll();
 
         // here we mark slots as occupied;

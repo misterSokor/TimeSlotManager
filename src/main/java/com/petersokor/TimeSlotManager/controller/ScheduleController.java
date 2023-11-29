@@ -32,7 +32,7 @@ public class ScheduleController {
         @GetMapping("/schedule")
         public String showSchedule(Model model) {
             List<TimeSlot> availableTimeSlots = bookingService.getAllAvailableTimeSlots();
-            List<TimeSlot> allTimeSlots = bookingService.getAllSlotsWithAvailability();
+            List<TimeSlot> allTimeSlots = bookingService.getAllSlots();
 
             model.addAttribute("availableTimeSlots", availableTimeSlots);
             model.addAttribute("allTimeSlots", allTimeSlots);
@@ -43,7 +43,7 @@ public class ScheduleController {
         // this method is used to bring full list of users who booked the lesson
         @GetMapping("/booking/allTimeSlots")
         public String showAllTimeSlots(Model model) {
-            List<TimeSlot> listOfUsers = bookingService.getAllSlotsWithAvailability();
+            List<TimeSlot> listOfUsers = bookingService.getAllSlots();
             model.addAttribute("listOfUsers", listOfUsers);
             return "listOfUsers";
         }

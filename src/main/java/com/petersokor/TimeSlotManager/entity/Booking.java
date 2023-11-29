@@ -11,7 +11,7 @@ public class Booking {
     @ManyToOne
     @JoinColumn(name = "slot_id")
     private TimeSlot timeSlot;
-    @Column(name = "userName")
+    @Column(name = "user_name")
     private String userName;
 
 
@@ -23,4 +23,6 @@ public class Booking {
         this.timeSlot = timeSlot;
     }
 
+    public void setOccupied(boolean isSlotOccupied) {
+    }
 }

@@ -20,6 +20,13 @@ public class TimeSlot {
 
     @Column(name = "name")
     private String name;
+    private DayOfWeek dayOfWeek;
+    private LocalTime startTime;
+    private String status;
+    @Transient
+    private boolean occupied;
+
+
 
     public String getName() {
         return name;
@@ -28,13 +35,6 @@ public class TimeSlot {
     public void setName(String name) {
         this.name = name;
     }
-
-    private DayOfWeek dayOfWeek;
-    private LocalTime startTime;
-    private String status;
-    @Transient
-    private boolean occupied;
-
     public boolean isOccupied() {
         return occupied;
     }
