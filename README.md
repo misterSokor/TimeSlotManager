@@ -1,8 +1,14 @@
-# Project Documentation: "TimeSlotManager"
+Peter Sokor individual project: "TimeSlotManager"
 
 ## Project Description:
 
-The "TimeSlotManager" project is a web application designed for managing class schedules. It provides the ability to book available time slots and display the schedule of classes.
+## Problem Statement
+
+-For many years, music teachers have faced challenges in effectively organizing and managing schedules for music lessons with their students. Existing methods, such as manual -schedule keeping, paper notebooks, or the use of shared calendars, often prove inconvenient and inefficient. This leads to difficulties in booking lesson times, tracking student -availability, and exchanging schedule-related information.
+
+-Most music teachers also encounter the need to send lesson schedules to students and receive confirmations from them. This process can be cumbersome and time-consuming, especially -when considering individual preferences and schedule changes.
+
+-This application helps music teachers to easily manage lesson schedules, рelps to keep track of the list of students who have booked time for a lesson and send reminder messages.
 
 
 ## Technologies and Tools:
@@ -60,6 +66,14 @@ The "TimeSlotManager" project is a web application designed for managing class s
 
 - Represents the entity of a booking.
 - Associated with a time slot through a "many-to-many" relationship.
+
+## Design Documentation
+[UserStories](DesignDocuments/userStories.md)
+[Tasks](DesignDocuments/tasks.md)
+[CreateTableSql](DesignDocuments/CreateTimeSlotTable.sql)
+
+
+
 
 ## Plans to work on:
 
