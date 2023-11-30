@@ -2,43 +2,35 @@
 
 ## Find Time Slots
 
-1. [ ] **Design Time Slots Table:**
-    - Design and create a database table to store information about time slots for music lessons (schedule).
+1. [ ] **Sign up:**
+    - Allow new users, including music students or parents, to register and 
+    - gain access to book piano lesson slots.
 
-2. [ ] **Scheduler Controller (Java Class):**
-    - Implement a controller class in Java that provides users with information about available time slots for booking.
+2. [ ] **Sign In:**
+    - Enable users to view the schedule of available piano lesson time slots upon 
+    - signing in.
 
-3. [ ] **Booking Controller (Java Class):**
-    - Implement a controller class in Java to handle searching for music lesson time slots.
+3. [ ] **Book Time Slot:**
+    - Provide users the capability to book a specific time slot for a piano 
+    - lesson.
 
-4. [ ] **Booking Entity (Java Class):**
-    - Create a Java class representing the Booking entity with available time slots.
+4. [ ] **Receive Confirmation:**
+    - Implement a system to automatically send confirmation notifications, 
+    - either via email or other notifications, to users for their booked 
+    - piano lessons.
 
-5. [ ] **Time Slots Entity (Java Class):**
-    - Create a Java class that serves for persisting booking information in the database.
+5. [ ] **Cancel Booking:**
+    - Develop a user-friendly feature allowing users to cancel a previously 
+    - booked piano lesson.
 
-6. [ ] **Booking Repository (Interface):**
-    - Interface for interacting with the database for the Booking entity. Also acts as a DAO.
+6. [ ] **Edit User Profile:**
+    - Enable users, specifically piano students or parents, to edit their 
+    - profile information, including contact details.
 
-7. [ ] **Time Slot Repository (Interface):**
-    - The interface extends JpaRepository, which is a Spring Data interface providing generic CRUD. Acts as a DAO.
+7. [ ] **Password Reset:**
+    - Implement a secure password reset mechanism for users who forget their 
+    - password, ensuring a straightforward and secure recovery process.
 
-8. [ ] **Book Time Slot:**
-    - Implement the ability for users to book a specific time slot for a music lesson.
-
-9. [ ] **Receive Confirmation:**
-    - Implement a system to send confirmation notifications to users after they book a music lesson.
-
-10. [ ] **Cancel Booking:**
-    - Allow users to cancel a booked music lesson.
-
-11. [ ] **View Teacher's Profile:**
-    - Create pages and logic to view the profile of the music teacher.
-
-12. [ ] **Receive Reminders:**
-    - Implement a system to send reminders to users for upcoming booked music lessons.
-
-## Sign In
-
-13. [ ] **Hall List of Students:**
-    - Create an HTML page for the teacher to see the names of students who booked time for a lesson. This page will use Authentication access.
+8. [ ] **Receive Reminders:**
+    - Establish a reminder system to notify piano students or parents of 
+    - upcoming booked lessons, enhancing user engagement and punctuality.

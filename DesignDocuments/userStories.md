@@ -10,22 +10,19 @@
 3. **Book Time Slot:**
     - As a user, I want to be able to book a specific time slot for a music lesson.
 
-4. **View Booked Lessons:**
-    - As a user, I want to view a list of the music lessons that I have booked.
-
-5. **Receive Confirmation:**
+4. **Receive Confirmation:**
     - As a user, I want to receive confirmation of my booked music lessons via email or notification.
 
-6. **Cancel Booking:**
+5. **Cancel Booking:**
     - As a user, I want to be able to cancel a booked music lesson.
 
-7. **Edit User Profile:**
+6. **Edit User Profile:**
     - As a user, I want to be able to edit my profile information, including contact details.
 
-8. **Password Reset:**
+7. **Password Reset:**
     - As a user, I want to be able to reset my password if I forget it.
 
-9. **Receive Reminders:**
+8. **Receive Reminders:**
     - As a user, I want to receive reminders for upcoming booked music lessons.
 
 
