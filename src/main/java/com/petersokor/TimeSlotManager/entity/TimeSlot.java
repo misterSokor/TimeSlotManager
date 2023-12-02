@@ -64,6 +64,6 @@ public class TimeSlot {
         return startTime;
     }
 
-    }
+}
 
 

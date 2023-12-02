@@ -15,7 +15,7 @@
 
 <table>
     <caption>
-        <a href="http://localhost:8080/schedule"><img src="/images/home.png" alt="Link Image" style="width: 50px; height: 50px;">
+        <a href="http://localhost:8080"><img src="/images/home.png" alt="Link Image" style="width: 50px; height: 50px;">
         </a>
     </caption>
     <thead>
@@ -32,7 +32,7 @@
     <tbody>
 
     <tr
-        th:each="slot, dayIndex : ${listOfUsers}">
+            th:each="slot, dayIndex : ${listOfUsers}">
         <td th:if="${dayIndex.index % 4 == 0}" th:attr="rowspan=4" th:text="${slot.dayOfWeek}"></td>
         <td th:text="${slot.startTime}"></td>
         <td th:text="${slot.name}"></td>

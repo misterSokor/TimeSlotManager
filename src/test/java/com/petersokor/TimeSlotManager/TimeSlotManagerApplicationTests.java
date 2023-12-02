@@ -9,5 +9,4 @@ class TimeSlotManagerApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }

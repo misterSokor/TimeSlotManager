@@ -29,22 +29,22 @@ public class ScheduleController {
     adds them to the model, and returns the "schedule" view.
      */
 
-        @GetMapping("/schedule")
-        public String showSchedule(Model model) {
-            List<TimeSlot> availableTimeSlots = bookingService.getAllAvailableTimeSlots();
-            List<TimeSlot> allTimeSlots = bookingService.getAllSlots();
+    @GetMapping("/")  //this is a home page when you open the app
+    public String showSchedule(Model model) {
+        List<TimeSlot> availableTimeSlots = bookingService.getAllAvailableTimeSlots();
+        List<TimeSlot> allTimeSlots = bookingService.getAllSlots();
 
-            model.addAttribute("availableTimeSlots", availableTimeSlots);
-            model.addAttribute("allTimeSlots", allTimeSlots);
+        model.addAttribute("availableTimeSlots", availableTimeSlots);
+        model.addAttribute("allTimeSlots", allTimeSlots);
 
-            return "schedule";
-        }
-
-        // this method is used to bring full list of users who booked the lesson
-        @GetMapping("/booking/allTimeSlots")
-        public String showAllTimeSlots(Model model) {
-            List<TimeSlot> listOfUsers = bookingService.getAllSlots();
-            model.addAttribute("listOfUsers", listOfUsers);
-            return "listOfUsers";
-        }
+        return "schedule";
     }
+
+    // this method is used to bring full list of users who booked the lesson
+    @GetMapping("/booking/allTimeSlots")
+    public String showAllTimeSlots(Model model) {
+        List<TimeSlot> listOfUsers = bookingService.getAllSlots();
+        model.addAttribute("listOfUsers", listOfUsers);
+        return "listOfUsers";
+    }
+}
