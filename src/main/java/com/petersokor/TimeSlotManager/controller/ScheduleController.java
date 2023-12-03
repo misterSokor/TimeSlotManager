@@ -29,7 +29,7 @@ public class ScheduleController {
     adds them to the model, and returns the "schedule" view.
      */
 
-    @GetMapping("/")  //this is a home page when you open the app
+    @GetMapping("/schedule")  //this is a home page when you open the app
     public String showSchedule(Model model) {
         List<TimeSlot> availableTimeSlots = bookingService.getAllAvailableTimeSlots();
         List<TimeSlot> allTimeSlots = bookingService.getAllSlots();

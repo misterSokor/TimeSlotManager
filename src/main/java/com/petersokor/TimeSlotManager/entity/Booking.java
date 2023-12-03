@@ -13,8 +13,16 @@ public class Booking {
     private TimeSlot timeSlot;
     @Column(name = "user_name")
     private String userName;
+    @Column(name = "cancellation_status")
+    private boolean cancellationStatus;
 
+    public boolean isCancellationStatus() {
+        return cancellationStatus;
+    }
 
+    public void setCancellationStatus(boolean cancellationStatus) {
+        this.cancellationStatus = cancellationStatus;
+    }
     public void setUserName(String userName) {
         this.userName = userName;
     }

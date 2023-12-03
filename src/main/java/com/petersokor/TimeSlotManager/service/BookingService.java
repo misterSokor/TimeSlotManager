@@ -63,4 +63,41 @@ public class BookingService {
             bookingRepository.save(booking);
         }
     }
+
+//    //to cancel time slot
+//    public void cancelBooking(Long timeSlotId) {
+//        TimeSlot timeSlot = timeSlotRepository.findById(timeSlotId).orElse(null);
+//        if (timeSlot != null && "booked".equals(timeSlot.getStatus())) {
+//            timeSlot.setStatus("free");
+//            timeSlot.setName(null); // Clear the username
+//            timeSlotRepository.save(timeSlot);
+//            logger.info("Booking canceled for TimeSlot: {}", timeSlot);
+//
+//            // Update the corresponding booking entity
+//            Booking booking = bookingRepository.findByTimeSlot(timeSlot);
+//            if (booking != null) {
+//                booking.setCancellationStatus(true);
+//                bookingRepository.save(booking);
+//            }
+//        }
+//    }
+
+    //to cancel time slot
+    public void cancelBooking(Long timeSlotId) {
+        TimeSlot timeSlot = timeSlotRepository.findById(timeSlotId).orElse(null);
+        if (timeSlot != null && "booked".equals(timeSlot.getStatus())) {
+            timeSlot.setStatus("free");
+            timeSlot.setName(null); // Clear the username
+            timeSlotRepository.save(timeSlot);
+            logger.info("Booking canceled for TimeSlot: {}", timeSlot);
+
+            // Update the corresponding booking entity
+            Booking booking = bookingRepository.findByTimeSlot(timeSlot);
+            if (booking != null) {
+                bookingRepository.deleteByTimeSlot(timeSlot); // Delete the booking record
+                logger.info("Booking record deleted for TimeSlot: {}", timeSlot);
+            }
+        }
+    }
+
 }

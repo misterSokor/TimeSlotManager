@@ -47,4 +47,11 @@ public class BookingController {
         bookingService.bookTimeSlot(slotId, username);
         return "redirect:/schedule";
     }
+
+    @PostMapping("/booking/cancel/{slotId}")
+    public String cancelBooking(@PathVariable Long slotId) {
+        bookingService.cancelBooking(slotId);
+        return "redirect:/schedule";
+    }
+
 }

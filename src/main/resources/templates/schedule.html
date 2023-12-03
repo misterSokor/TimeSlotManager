@@ -1,45 +1,64 @@
 <!-- schedule.html -->
-<!--//to fit mobile screen-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Lesson Schedule</title>
+
     <link rel="stylesheet" type="text/css" href="/main.css">
     <link rel="stylesheet" type="text/css" href="/schedule.css">
 </head>
 
 <body>
+
 <table>
+
     <caption>
         <h1>Lesson Schedule</h1>
         <a th:href="@{/booking/allTimeSlots}">List of booked slots</a>
     </caption>
+
     <caption>
         ---------------------------
     </caption>
 
     <thead>
-
     <tr>
         <th>Day</th>
         <th>Start Time</th>
         <th>Status</th>
         <th>Action</th>
+        <th></th>
     </tr>
     </thead>
+
     <tbody>
-    <tr th:each="slot, dayIndex : ${allTimeSlots}">
+    <!-- Iterating over each time slot to populate the table -->
+    <tr
+            th:each="slot, dayIndex : ${allTimeSlots}">
         <td th:if="${dayIndex.index % 4 == 0}" th:attr="rowspan=4" th:text="${slot.dayOfWeek}"></td>
+
+        <!-- start time of the time slot -->
         <td th:text="${slot.startTime}"></td>
+
+        <!-- Display the status of the time slot with different color on status
+         -->
+
         <td th:class="${slot.status eq 'free'} ? 'green-text' : (${slot.status eq 'booked'} ? 'red-text' : '')" th:text="${slot.status}"></td>
+
+        <!-- Form for booking a time slot -->
         <td>
             <form th:action="@{/booking/book/{slotId}(slotId=${slot.id})}" method="post">
-                <label for="username">your name:</label>
+                <label for="username">Your name:</label>
                 <input type="text" id="username" name="username" required>
                 <button type="submit">Book</button>
+            </form>
+        </td>
+        <!-- Form for canceling a booking -->
+        <td>
+            <form th:action="@{/booking/cancel/{slotId}(slotId=${slot.id})}" method="post">
+                <button type="submit">Cancel</button>
             </form>
         </td>
     </tr>
