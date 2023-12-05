@@ -33,4 +33,8 @@ public class Booking {
 
     public void setOccupied(boolean isSlotOccupied) {
     }
+
+    public String getUserName() {
+        return userName;
+    }
 }

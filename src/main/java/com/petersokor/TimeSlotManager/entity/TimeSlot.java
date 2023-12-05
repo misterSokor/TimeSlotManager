@@ -64,6 +64,9 @@ public class TimeSlot {
         return startTime;
     }
 
+    // Устанавливаем какое-то фиктивное значение ID
+    public void setId(long l) {
+    }
 }
 
 
