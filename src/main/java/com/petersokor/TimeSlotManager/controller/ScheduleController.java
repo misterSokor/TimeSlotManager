@@ -2,6 +2,8 @@ package com.petersokor.TimeSlotManager.controller;
 
 import com.petersokor.TimeSlotManager.entity.TimeSlot;
 import com.petersokor.TimeSlotManager.service.BookingService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,6 +20,7 @@ import java.util.List;
 */
 @Controller
 public class ScheduleController {
+    private final Logger logger = (Logger) LogManager.getLogger(this.getClass());
 
     @Autowired
     private BookingService bookingService;
@@ -36,6 +39,9 @@ public class ScheduleController {
 
         model.addAttribute("availableTimeSlots", availableTimeSlots);
         model.addAttribute("allTimeSlots", allTimeSlots);
+        logger.info("Application started. Here is the schedule for available" +
+                        " time slots: {}",
+                availableTimeSlots);
 
         return "schedule";
     }
@@ -45,6 +51,7 @@ public class ScheduleController {
     public String showAllTimeSlots(Model model) {
         List<TimeSlot> listOfUsers = bookingService.getAllSlots();
         model.addAttribute("listOfUsers", listOfUsers);
+        logger.info("Here is the List of all users: {}", listOfUsers);
         return "listOfUsers";
     }
 }

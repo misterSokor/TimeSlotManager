@@ -28,11 +28,13 @@ to ensure that each method is wrapped in a transaction.
 @Service
 @Transactional
 public class BookingService {
-    private final Logger logger = LogManager.getLogger(this.getClass());
+    private static final Logger logger = LogManager.getLogger(BookingService.class);
     @Autowired
     private TimeSlotRepository timeSlotRepository;
     @Autowired
     private BookingRepository bookingRepository;
+
+
     public List<TimeSlot> getAllAvailableTimeSlots() {
         return timeSlotRepository.findByStatus("free");
     }
@@ -61,6 +63,7 @@ public class BookingService {
             booking.setUserName(username);
             booking.setTimeSlot(timeSlot);
             bookingRepository.save(booking);
+
         }
     }
 
@@ -71,13 +74,15 @@ public class BookingService {
             timeSlot.setStatus("free");
             timeSlot.setName(null); // Clear the username
             timeSlotRepository.save(timeSlot);
-            logger.info("Booking canceled for TimeSlot: {}", timeSlot);
+            logger.info("Booking was canceled for TimeSlot: {}", timeSlot);
+
 
             // Update the corresponding booking entity
             Booking booking = bookingRepository.findByTimeSlot(timeSlot);
             if (booking != null) {
                 bookingRepository.deleteByTimeSlot(timeSlot); // Delete the booking record
                 logger.info("Booking record deleted for TimeSlot: {}", timeSlot);
+
             }
         }
     }

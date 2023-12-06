@@ -37,4 +37,8 @@ public class Booking {
     public String getUserName() {
         return userName;
     }
+
+    public TimeSlot getTimeSlot() {
+        return timeSlot;
+    }
 }

@@ -2,7 +2,6 @@ package com.petersokor.TimeSlotManager.controller;
 
 import com.petersokor.TimeSlotManager.entity.TimeSlot;
 import com.petersokor.TimeSlotManager.service.BookingService;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
+
 
 /*
   This class handles web requests related to time
@@ -46,6 +46,7 @@ public class BookingController {
     public String bookTimeSlot(@PathVariable Long slotId, @RequestParam String username) {
         bookingService.bookTimeSlot(slotId, username);
         return "redirect:/schedule";
+
     }
 
     @PostMapping("/booking/cancel/{slotId}")
@@ -53,5 +54,4 @@ public class BookingController {
         bookingService.cancelBooking(slotId);
         return "redirect:/schedule";
     }
-
 }
