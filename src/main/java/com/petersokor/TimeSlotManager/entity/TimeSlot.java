@@ -1,6 +1,7 @@
 package com.petersokor.TimeSlotManager.entity;
 
 import jakarta.persistence.*;
+
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 
@@ -21,6 +22,7 @@ public class TimeSlot {
     @Column(name = "name")
     private String name;
     private DayOfWeek dayOfWeek;
+    @Column(nullable = true)
     private LocalTime startTime;
     private String status;
     @Transient
