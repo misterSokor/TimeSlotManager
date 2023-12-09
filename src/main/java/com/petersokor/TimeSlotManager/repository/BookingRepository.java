@@ -17,4 +17,6 @@ public interface BookingRepository extends JpaRepository<Booking, Long> {
     Booking findByTimeSlot(TimeSlot timeSlot);
 
     void deleteByTimeSlot(TimeSlot timeSlot);
+
+    Booking findByUserName(String username);
 }

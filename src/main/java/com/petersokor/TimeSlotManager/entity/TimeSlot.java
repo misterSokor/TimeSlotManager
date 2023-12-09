@@ -45,10 +45,6 @@ public class TimeSlot {
         this.occupied = occupied;
     }
 
-    public Long getId() {
-        return id;
-    }
-
     public String getStatus() {
         return status;
     }
@@ -67,7 +63,14 @@ public class TimeSlot {
     }
 
     // Устанавливаем какое-то фиктивное значение ID
-    public void setId(long l) {
+
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }
 

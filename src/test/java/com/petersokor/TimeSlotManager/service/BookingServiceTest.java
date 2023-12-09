@@ -18,12 +18,13 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
+@Transactional
 class BookingServiceTest {
 
     private static final Logger logger = LogManager.getLogger(BookingService.class);
 
     @Autowired
-    BookingService  bookingService = new BookingService();
+    BookingService bookingService = new BookingService();
     @Autowired
     private TimeSlotRepository timeSlotRepository;
     @Autowired
@@ -31,31 +32,37 @@ class BookingServiceTest {
     @PersistenceContext
     private EntityManager entityManager;
 
+    // Common method for creating and saving time slots
+    private TimeSlot createAndSaveTimeSlot(String status) {
+        TimeSlot timeSlot = new TimeSlot();
+        timeSlot.setStatus(status);
+        timeSlotRepository.save(timeSlot);
+        return timeSlot;
+    }
+
     @Test
     @Transactional
     void getAllAvailableTimeSlots() {
-        // for instance, I have free time slots in the table
-        TimeSlot freeTimeSlot1 = new TimeSlot();
-        TimeSlot freeTimeSlot2 = new TimeSlot();
-        timeSlotRepository.save(freeTimeSlot1);
-        timeSlotRepository.save(freeTimeSlot2);
+        // Create free time slots in the table
+        TimeSlot freeTimeSlot1 = createAndSaveTimeSlot("free");
+        TimeSlot freeTimeSlot2 = createAndSaveTimeSlot("free");
 
-        // here I get the actual number time slots
+        // Get the actual number of time slots
         List<TimeSlot> initialFreeSlots = bookingService.getAllAvailableTimeSlots();
         int initialFreeSlotCount = initialFreeSlots.size();
 
-        // check if they are free
+        // Check if they are free
         assertNotNull(initialFreeSlots);
         assertTrue(initialFreeSlots.stream().allMatch(slot -> "free".equals(slot.getStatus())));
 
-        // invoke method getAllAvailableTimeSlots that I want to test
+        // Invoke method getAllAvailableTimeSlots that I want to test
         List<TimeSlot> availableTimeSlots = bookingService.getAllAvailableTimeSlots();
 
-        //  get the number of free slots after possible changes
+        // Get the number of free slots after possible changes
         List<TimeSlot> updatedFreeSlots = bookingService.getAllAvailableTimeSlots();
         int updatedFreeSlotCount = updatedFreeSlots.size();
 
-        // check that I still have free slots and the number has not changed
+        // Check that I still have free slots and the number has not changed
         assertNotNull(availableTimeSlots);
         assertTrue(availableTimeSlots.stream().allMatch(slot -> "free".equals(slot.getStatus())));
         assertEquals(initialFreeSlotCount, updatedFreeSlotCount);
@@ -63,27 +70,24 @@ class BookingServiceTest {
 
     @Test
     void getAllSlots() {
+        // Create free and booked time slots
+        TimeSlot freeTimeSlot1 = createAndSaveTimeSlot("free");
+        TimeSlot bookedTimeSlot1 = createAndSaveTimeSlot("booked");
 
-        TimeSlot freeTimeSlot1 = new TimeSlot();
-        TimeSlot bookedTimeSlot1 = new TimeSlot();
-        timeSlotRepository.saveAll(List.of(freeTimeSlot1, bookedTimeSlot1));
-
-
+        // Get the initial number of all time slots
         List<TimeSlot> initialAllSlots = bookingService.getAllSlots();
         int initialSlotCount = initialAllSlots.size();
-
 
         assertNotNull(initialAllSlots);
         assertTrue(initialAllSlots.stream().anyMatch(slot -> "free".equals(slot.getStatus())));
         assertTrue(initialAllSlots.stream().anyMatch(slot -> "booked".equals(slot.getStatus())));
 
-
+        // Invoke method getAllSlots that I want to test
         List<TimeSlot> allTimeSlots = bookingService.getAllSlots();
 
-
+        // Get the number of all slots after possible changes
         List<TimeSlot> updatedAllSlots = bookingService.getAllSlots();
         int updatedSlotCount = updatedAllSlots.size();
-
 
         assertNotNull(allTimeSlots);
         assertTrue(allTimeSlots.stream().anyMatch(slot -> "free".equals(slot.getStatus())));
@@ -91,57 +95,50 @@ class BookingServiceTest {
         assertEquals(initialSlotCount, updatedSlotCount);
     }
 
+    // old method
     @Test
     @Transactional
     void bookTimeSlot() {
+        // Create a free time slot
+        TimeSlot freeTimeSlot = createAndSaveTimeSlot("free");
 
-        TimeSlot freeTimeSlot = new TimeSlot();
-        timeSlotRepository.save(freeTimeSlot);
-        entityManager.flush();
-
-        logger.info("Before invoking bookTimeSlot. Free TimeSlot ID: {}", freeTimeSlot.getId());
-
-
+        // Invoke method bookTimeSlot that I want to test
         bookingService.bookTimeSlot(freeTimeSlot.getId(), "David");
 
-        logger.info("After invoking bookTimeSlot. Free TimeSlot ID: {}", freeTimeSlot.getId());
-
+        // Retrieve the booked time slot and associated booking from the repository
         TimeSlot bookedTimeSlot = timeSlotRepository.findById(freeTimeSlot.getId()).orElse(null);
         Booking booking = bookingRepository.findByTimeSlot(bookedTimeSlot);
 
-        logger.info("bookedTimeSlot: {}", bookedTimeSlot);
-        logger.info("booking: {}", booking);
-
+        // Check that the time slot is booked with the correct status and name
         assertNotNull(bookedTimeSlot);
         assertEquals("booked", bookedTimeSlot.getStatus());
         assertEquals("David", bookedTimeSlot.getName());
 
+        // Check that the booking is created with the correct user name and associated time slot
         assertNotNull(booking);
         assertEquals("David", booking.getUserName());
         assertEquals(bookedTimeSlot, booking.getTimeSlot());
     }
 
-
     @Test
     @Transactional
     void cancelBooking() {
+        // Create a booked time slot
+        TimeSlot bookedTimeSlot = createAndSaveTimeSlot("booked");
 
-        TimeSlot bookedTimeSlot = new TimeSlot();
-        bookedTimeSlot.setName("Jessica");
-        timeSlotRepository.save(bookedTimeSlot);
-
-
+        // Invoke method cancelBooking that I want to test
         bookingService.cancelBooking(bookedTimeSlot.getId());
 
-
+        // Retrieve the canceled time slot and associated booking from the repository
         TimeSlot canceledTimeSlot = timeSlotRepository.findById(bookedTimeSlot.getId()).orElse(null);
         Booking canceledBooking = bookingRepository.findByTimeSlot(canceledTimeSlot);
 
+        // Check that the time slot is now free with no name
         assertNotNull(canceledTimeSlot);
         assertEquals("free", canceledTimeSlot.getStatus());
         assertNull(canceledTimeSlot.getName());
 
+        // Check that the associated booking is null, indicating cancellation
         assertNull(canceledBooking);
     }
-
 }
