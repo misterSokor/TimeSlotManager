@@ -57,13 +57,9 @@ public class TimeSlot {
         return dayOfWeek;
     }
 
-
     public LocalTime getStartTime() {
         return startTime;
     }
-
-    // Устанавливаем какое-то фиктивное значение ID
-
 
     public Long getId() {
         return id;
