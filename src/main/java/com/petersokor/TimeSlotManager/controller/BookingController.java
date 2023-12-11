@@ -54,4 +54,5 @@ public class BookingController {
         bookingService.cancelBooking(slotId);
         return "redirect:/schedule";
     }
+
 }
