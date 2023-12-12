@@ -12,6 +12,20 @@
 </head>
 <body>
 
+<form name="form" method="post" action="/process_login">
+    <label for="username">Type your user name</label>
+    <input type="text" name="username" id="username"/>
+    <br/>
+    <label for="password">Enter the password: </label>
+    <input type="password" name="password" id="password"/>
+    <br/>
+    <input type="submit" value="Login"/>
+
+    <div th:if="${param.error}" style="color: red">
+        incorrect username or password
+    </div>
+</form>
+
 </body>
 </html>
 
