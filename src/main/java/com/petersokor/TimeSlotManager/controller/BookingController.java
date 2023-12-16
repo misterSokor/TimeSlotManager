@@ -25,7 +25,7 @@ import java.util.List;
 */
 @Controller
 public class BookingController {
-    private final Logger logger = (Logger) LogManager.getLogger(this.getClass());
+    private final Logger logger =  LogManager.getLogger(this.getClass());
 
     @Autowired
     private BookingService bookingService;
