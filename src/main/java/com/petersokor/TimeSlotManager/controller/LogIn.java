@@ -8,20 +8,23 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.Properties;
 
-@WebServlet(
-        urlPatterns = {"/logIn"}
+@WebServlet(urlPatterns = {"/login"}
 )
 
 /** Begins the authentication process using AWS Cognito
  *
  */
+@Component
 public class LogIn extends HttpServlet implements PropertiesLoader {
+
     Properties properties;
-    private final Logger logger = LogManager.getLogger(this.getClass());
+    private final Logger logger = (Logger) LogManager.getLogger(this.getClass());
+
     public static String CLIENT_ID;
     public static String LOGIN_URL;
     public static String REDIRECT_URL;
@@ -29,6 +32,7 @@ public class LogIn extends HttpServlet implements PropertiesLoader {
     @Override
     public void init() throws ServletException {
         super.init();
+        logger.info("NULL from init method");
         loadProperties();
     }
 
@@ -43,10 +47,11 @@ public class LogIn extends HttpServlet implements PropertiesLoader {
             LOGIN_URL = properties.getProperty("loginURL");
             REDIRECT_URL = properties.getProperty("redirectURL");
         } catch (IOException ioException) {
-            logger.error("Cannot load properties..." + ioException.getMessage(), ioException);
+            logger.info("Cannot load properties..." + ioException.getMessage(),
+                    ioException);
 
         } catch (Exception e) {
-            logger.error("Error loading properties" + e.getMessage(), e);
+            logger.info("Error loading properties" + e.getMessage(), e);
 
         }
     }
@@ -62,7 +67,7 @@ public class LogIn extends HttpServlet implements PropertiesLoader {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         if (CLIENT_ID == null || LOGIN_URL == null || REDIRECT_URL == null) {
-            // Forward to an error page
+            logger.info("Properties are null, redirecting to error page");
             resp.sendRedirect("error.html");
         } else {
             String url = LOGIN_URL + "?response_type=code&client_id=" + CLIENT_ID + "&redirect_uri=" + REDIRECT_URL;
