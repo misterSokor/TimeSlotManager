@@ -23,7 +23,7 @@ public interface PropertiesLoader{
     default Properties loadProperties(String propertiesFilePath) throws IOException, Exception{
         Properties properties = new Properties();
 
-        properties.load(this.getClass().getResourceAsStream(propertiesFilePath));
+         properties.load(this.getClass().getResourceAsStream(propertiesFilePath));
 
         return properties;
     }

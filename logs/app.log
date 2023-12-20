@@ -1,0 +1,781 @@
+18:53:04.291 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.petersokor.TimeSlotManager.service.BookingServiceTest]: BookingServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:53:04.403 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.petersokor.TimeSlotManager.TimeSlotManagerApplication for test class com.petersokor.TimeSlotManager.service.BookingServiceTest
+18:53:04.895 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/mac/.m2/repository/org/json/json/20231013/json-20231013.jar!/org/json/JSONObject.class
+	jar:file:/Users/mac/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+18:53:04.913 [main] INFO  c.p.T.service.BookingServiceTest - Starting BookingServiceTest using Java 21.0.1 with PID 13668 (started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+18:53:04.914 [main] INFO  c.p.T.service.BookingServiceTest - No active profile set, falling back to 1 default profile: "default"
+18:53:05.608 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:53:05.667 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+18:53:06.161 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:53:06.222 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+18:53:06.254 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:53:06.512 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:53:06.537 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:53:07.004 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@485c84d7
+18:53:07.006 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:53:07.835 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:53:07.907 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:53:08.425 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:53:08.449 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+18:53:08.826 [main] INFO  c.p.T.service.BookingServiceTest - Started BookingServiceTest in 4.227 seconds (process running for 5.475)
+18:53:09.860 [main] INFO  c.p.T.service.BookingService - GET ALL SLOTS AVAILABLE: [com.petersokor.TimeSlotManager.entity.TimeSlot@5911dd25, com.petersokor.TimeSlotManager.entity.TimeSlot@6d8cbd1a, com.petersokor.TimeSlotManager.entity.TimeSlot@3725242e, com.petersokor.TimeSlotManager.entity.TimeSlot@6860c000, com.petersokor.TimeSlotManager.entity.TimeSlot@3f4fd0dc, com.petersokor.TimeSlotManager.entity.TimeSlot@3723de42, com.petersokor.TimeSlotManager.entity.TimeSlot@293988dc, com.petersokor.TimeSlotManager.entity.TimeSlot@47b72d3b, com.petersokor.TimeSlotManager.entity.TimeSlot@63fcc21, com.petersokor.TimeSlotManager.entity.TimeSlot@2fc7c36a, com.petersokor.TimeSlotManager.entity.TimeSlot@4a5dc126, com.petersokor.TimeSlotManager.entity.TimeSlot@34fde3a3, com.petersokor.TimeSlotManager.entity.TimeSlot@4cdb7fd9, com.petersokor.TimeSlotManager.entity.TimeSlot@5d9639bb, com.petersokor.TimeSlotManager.entity.TimeSlot@796687de, com.petersokor.TimeSlotManager.entity.TimeSlot@225d93aa, com.petersokor.TimeSlotManager.entity.TimeSlot@35ef158f, com.petersokor.TimeSlotManager.entity.TimeSlot@59d8a968, com.petersokor.TimeSlotManager.entity.TimeSlot@14cd8dfa, com.petersokor.TimeSlotManager.entity.TimeSlot@5a438c0a, com.petersokor.TimeSlotManager.entity.TimeSlot@4a5cddd9, com.petersokor.TimeSlotManager.entity.TimeSlot@3e92bded]
+18:53:09.867 [main] INFO  c.p.T.service.BookingService - GET ALL SLOTS AVAILABLE: [com.petersokor.TimeSlotManager.entity.TimeSlot@5911dd25, com.petersokor.TimeSlotManager.entity.TimeSlot@6d8cbd1a, com.petersokor.TimeSlotManager.entity.TimeSlot@3725242e, com.petersokor.TimeSlotManager.entity.TimeSlot@6860c000, com.petersokor.TimeSlotManager.entity.TimeSlot@3f4fd0dc, com.petersokor.TimeSlotManager.entity.TimeSlot@3723de42, com.petersokor.TimeSlotManager.entity.TimeSlot@293988dc, com.petersokor.TimeSlotManager.entity.TimeSlot@47b72d3b, com.petersokor.TimeSlotManager.entity.TimeSlot@63fcc21, com.petersokor.TimeSlotManager.entity.TimeSlot@2fc7c36a, com.petersokor.TimeSlotManager.entity.TimeSlot@4a5dc126, com.petersokor.TimeSlotManager.entity.TimeSlot@34fde3a3, com.petersokor.TimeSlotManager.entity.TimeSlot@4cdb7fd9, com.petersokor.TimeSlotManager.entity.TimeSlot@5d9639bb, com.petersokor.TimeSlotManager.entity.TimeSlot@796687de, com.petersokor.TimeSlotManager.entity.TimeSlot@225d93aa, com.petersokor.TimeSlotManager.entity.TimeSlot@35ef158f, com.petersokor.TimeSlotManager.entity.TimeSlot@59d8a968, com.petersokor.TimeSlotManager.entity.TimeSlot@14cd8dfa, com.petersokor.TimeSlotManager.entity.TimeSlot@5a438c0a, com.petersokor.TimeSlotManager.entity.TimeSlot@4a5cddd9, com.petersokor.TimeSlotManager.entity.TimeSlot@3e92bded]
+18:53:09.872 [main] INFO  c.p.T.service.BookingService - GET ALL SLOTS AVAILABLE: [com.petersokor.TimeSlotManager.entity.TimeSlot@5911dd25, com.petersokor.TimeSlotManager.entity.TimeSlot@6d8cbd1a, com.petersokor.TimeSlotManager.entity.TimeSlot@3725242e, com.petersokor.TimeSlotManager.entity.TimeSlot@6860c000, com.petersokor.TimeSlotManager.entity.TimeSlot@3f4fd0dc, com.petersokor.TimeSlotManager.entity.TimeSlot@3723de42, com.petersokor.TimeSlotManager.entity.TimeSlot@293988dc, com.petersokor.TimeSlotManager.entity.TimeSlot@47b72d3b, com.petersokor.TimeSlotManager.entity.TimeSlot@63fcc21, com.petersokor.TimeSlotManager.entity.TimeSlot@2fc7c36a, com.petersokor.TimeSlotManager.entity.TimeSlot@4a5dc126, com.petersokor.TimeSlotManager.entity.TimeSlot@34fde3a3, com.petersokor.TimeSlotManager.entity.TimeSlot@4cdb7fd9, com.petersokor.TimeSlotManager.entity.TimeSlot@5d9639bb, com.petersokor.TimeSlotManager.entity.TimeSlot@796687de, com.petersokor.TimeSlotManager.entity.TimeSlot@225d93aa, com.petersokor.TimeSlotManager.entity.TimeSlot@35ef158f, com.petersokor.TimeSlotManager.entity.TimeSlot@59d8a968, com.petersokor.TimeSlotManager.entity.TimeSlot@14cd8dfa, com.petersokor.TimeSlotManager.entity.TimeSlot@5a438c0a, com.petersokor.TimeSlotManager.entity.TimeSlot@4a5cddd9, com.petersokor.TimeSlotManager.entity.TimeSlot@3e92bded]
+18:53:09.886 [main] INFO  c.p.T.service.BookingService - Booking was canceled for TimeSlot: com.petersokor.TimeSlotManager.entity.TimeSlot@3448a248
+18:53:09.889 [main] WARN  c.p.T.service.BookingService - Booking not found for TimeSlot: com.petersokor.TimeSlotManager.entity.TimeSlot@3448a248
+18:53:09.953 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:53:09.955 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+18:53:09.964 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+18:54:31.208 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 13698 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+18:54:31.212 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+18:54:31.873 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:54:31.920 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+18:54:32.314 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:54:32.319 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:54:32.321 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:54:32.321 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+18:54:32.364 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:54:32.365 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1098 ms
+18:54:32.518 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:54:32.556 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+18:54:32.585 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:54:32.768 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:54:32.788 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:54:33.018 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67dc6b48
+18:54:33.020 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:54:33.769 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:54:33.824 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:54:34.153 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:54:34.169 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+18:54:34.449 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:54:34.463 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+18:54:34.465 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+18:54:34.473 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 3.622 seconds (process running for 4.375)
+18:54:35.966 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:54:35.966 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:54:35.968 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+19:02:34.190 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:02:34.192 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+19:02:34.198 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+19:02:37.038 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 13814 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+19:02:37.044 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+19:02:37.731 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+19:02:37.791 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+19:02:38.255 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+19:02:38.275 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+19:02:38.276 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+19:02:38.277 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+19:02:38.328 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:02:38.328 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1213 ms
+19:02:38.497 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+19:02:38.546 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+19:02:38.578 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+19:02:38.809 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+19:02:38.836 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+19:02:39.156 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b091a92
+19:02:39.157 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+19:03:31.539 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+19:03:34.663 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:04:11.628 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+19:04:14.647 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+19:04:49.354 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+19:04:49.959 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+19:04:50.026 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+19:04:51.060 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 134.465 seconds (process running for 135.936)
+19:15:12.339 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:15:12.342 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+19:15:12.351 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:13:17.568 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 14636 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+23:13:17.571 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+23:13:18.370 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:13:18.434 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+23:13:19.062 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:13:19.070 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:13:19.073 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:13:19.073 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:13:19.137 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:13:19.137 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1510 ms
+23:13:19.351 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:13:19.433 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+23:13:19.480 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+23:13:19.779 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:13:19.810 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:13:20.105 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ad1be5d
+23:13:20.107 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:13:21.338 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:13:21.494 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:13:21.918 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:13:21.943 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+23:13:22.325 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:13:22.345 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+23:13:22.347 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:13:22.357 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 5.3 seconds (process running for 6.398)
+23:13:34.199 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:13:34.199 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:13:34.200 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+23:15:53.185 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:15:53.187 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:15:53.195 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:15:56.671 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 14700 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+23:15:56.674 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+23:15:57.393 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:15:57.468 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+23:15:58.112 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:15:58.129 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:15:58.132 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:15:58.133 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:15:58.229 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:15:58.231 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1504 ms
+23:15:58.465 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:15:58.550 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+23:15:58.623 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+23:15:58.905 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:15:58.938 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:15:59.224 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f810c18
+23:15:59.239 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:16:00.452 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:16:00.543 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:16:00.984 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:16:01.007 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+23:16:01.416 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:16:01.431 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+23:16:01.433 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:16:01.441 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 5.34 seconds (process running for 7.364)
+23:16:03.436 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:16:03.436 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:16:03.437 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+23:17:12.195 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:17:12.198 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:17:12.206 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:17:15.529 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 14730 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+23:17:15.534 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+23:17:16.368 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:17:16.463 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82 ms. Found 2 JPA repository interfaces.
+23:17:17.308 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:17:17.323 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:17:17.327 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:17:17.328 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:17:17.428 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:17:17.428 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1839 ms
+23:17:17.640 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:17:17.700 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+23:17:17.778 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+23:17:18.110 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:17:18.140 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:17:18.469 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@605eb072
+23:17:18.471 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:17:19.683 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:17:19.761 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:17:20.216 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:17:20.237 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+23:17:20.571 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:17:20.589 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+23:17:20.591 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:17:20.602 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 5.72 seconds (process running for 7.541)
+23:17:23.186 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:17:23.187 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:17:23.188 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+23:19:17.458 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:19:17.461 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:19:17.468 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:19:20.233 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 14782 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+23:19:20.239 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+23:19:20.958 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:19:21.019 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces.
+23:19:21.649 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:19:21.662 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:19:21.665 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:19:21.665 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:19:21.739 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:19:21.740 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1440 ms
+23:19:21.999 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:19:22.078 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+23:19:22.118 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+23:19:22.389 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:19:22.418 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:19:22.828 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43fd77d8
+23:19:22.830 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:19:24.057 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:19:24.164 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:19:24.580 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:19:24.602 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+23:19:25.061 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+23:19:25.064 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:19:25.094 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 5.378 seconds (process running for 6.88)
+23:19:25.112 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:19:25.116 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:19:25.129 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:19:28.971 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 14789 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+23:19:28.979 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+23:19:29.676 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:19:29.732 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+23:19:30.199 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:19:30.207 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:19:30.208 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:19:30.209 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:19:30.262 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:19:30.263 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1210 ms
+23:19:30.522 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:19:30.573 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+23:19:30.601 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+23:19:30.800 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:19:30.825 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:19:31.088 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e39f08c
+23:19:31.090 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:19:31.938 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:19:32.017 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:19:32.428 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:19:32.445 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+23:19:32.740 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:19:32.755 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+23:19:32.756 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:19:32.765 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 4.497 seconds (process running for 5.515)
+23:19:33.501 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:19:33.501 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:19:33.503 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+23:20:09.447 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:20:09.450 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:20:09.456 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:20:12.328 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 14810 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+23:20:12.336 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+23:20:13.178 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:20:13.240 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+23:20:13.985 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:20:14.003 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:20:14.007 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:20:14.007 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:20:14.106 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:20:14.107 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1699 ms
+23:20:14.335 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:20:14.402 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+23:20:14.439 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+23:20:14.771 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:20:14.800 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:20:15.056 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46a388cc
+23:20:15.058 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:20:16.169 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:20:16.228 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:20:16.613 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:20:16.634 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+23:20:17.132 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:20:17.168 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+23:20:17.169 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:20:17.181 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 5.52 seconds (process running for 6.96)
+23:20:18.121 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:20:18.121 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:20:18.123 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+23:22:23.186 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:22:23.188 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:22:23.194 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:22:25.624 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 14856 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+23:22:25.631 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+23:22:26.328 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:22:26.390 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+23:22:26.906 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:22:26.922 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:22:26.925 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:22:26.925 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:22:27.010 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:22:27.010 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1323 ms
+23:22:27.280 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:22:27.370 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+23:22:27.422 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+23:22:27.727 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:22:27.754 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:22:27.996 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@604f376a
+23:22:27.998 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:22:28.972 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:22:29.043 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:22:29.397 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:22:29.413 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+23:22:29.804 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:22:29.817 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:22:29.826 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 4.763 seconds (process running for 5.93)
+23:22:31.783 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:22:31.784 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:22:31.785 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+23:24:09.106 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:24:09.107 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:24:09.113 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:24:12.135 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 14896 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+23:24:12.139 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+23:24:12.724 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:24:12.772 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+23:24:13.330 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:24:13.338 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:24:13.339 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:24:13.339 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:24:13.390 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:24:13.391 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1200 ms
+23:24:13.610 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:24:13.706 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+23:24:13.746 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+23:24:14.035 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:24:14.068 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:24:14.342 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67dc6b48
+23:24:14.344 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:24:15.123 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:24:15.178 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:24:15.656 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:24:15.692 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+23:24:15.998 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:24:16.014 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:24:16.024 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 4.434 seconds (process running for 5.274)
+23:24:16.645 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:24:16.645 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:24:16.646 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+23:25:22.171 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:25:22.173 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:25:22.180 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:25:24.751 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 14929 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+23:25:24.754 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+23:25:25.440 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:25:25.523 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+23:25:25.989 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:25:25.996 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:25:25.998 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:25:25.998 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:25:26.048 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:25:26.048 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1239 ms
+23:25:26.345 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:25:26.411 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+23:25:26.449 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+23:25:26.716 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:25:26.745 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:25:27.014 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16e07bae
+23:25:27.015 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:25:27.960 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:25:28.027 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:25:28.369 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:25:28.387 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+23:25:28.681 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:25:28.696 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+23:25:28.698 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:25:28.706 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 4.387 seconds (process running for 5.701)
+23:25:34.780 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:25:34.780 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:25:34.781 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+23:26:05.610 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:26:05.612 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:26:05.617 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:26:07.979 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 14951 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+23:26:08.005 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+23:26:08.788 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:26:08.841 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+23:26:09.377 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:26:09.383 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:26:09.384 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:26:09.385 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:26:09.429 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:26:09.429 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1287 ms
+23:26:09.584 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:26:09.624 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+23:26:09.649 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+23:26:09.837 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:26:09.858 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:26:10.091 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@667a467f
+23:26:10.092 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:26:10.957 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:26:11.020 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:26:11.391 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:26:11.409 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+23:26:11.786 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:26:11.801 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+23:26:11.802 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:26:11.812 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 4.377 seconds (process running for 5.498)
+23:26:13.700 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:26:13.700 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:26:13.702 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+23:32:34.515 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:32:34.518 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:32:34.525 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:32:36.871 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 15051 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+23:32:36.875 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+23:32:37.612 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:32:37.688 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+23:32:38.208 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:32:38.214 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:32:38.216 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:32:38.216 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:32:38.281 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:32:38.282 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1351 ms
+23:32:38.516 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:32:38.595 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+23:32:38.640 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+23:32:38.863 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:32:38.889 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:32:39.168 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55c03e4
+23:32:39.169 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:32:40.302 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:32:40.392 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:32:40.792 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:32:40.810 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+23:32:41.142 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:32:41.161 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+23:32:41.162 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:32:41.174 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 4.726 seconds (process running for 5.831)
+23:32:42.842 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:32:42.842 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:32:42.843 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+23:36:18.424 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:36:18.426 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:36:18.432 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:36:21.006 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 15122 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+23:36:21.012 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+23:36:21.754 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:36:21.819 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+23:36:22.472 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:36:22.481 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:36:22.483 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:36:22.483 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:36:22.546 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:36:22.547 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1462 ms
+23:36:22.996 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:36:23.080 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+23:36:23.131 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+23:36:23.430 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:36:23.460 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:36:23.833 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16e07bae
+23:36:23.835 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:36:24.746 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:36:24.804 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:36:25.219 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:36:25.237 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+23:36:25.609 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:36:25.631 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+23:36:25.633 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:36:25.644 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 5.206 seconds (process running for 6.443)
+23:36:28.280 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:36:28.280 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:36:28.281 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+23:37:07.802 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:37:07.805 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:37:07.810 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:37:10.215 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 15153 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+23:37:10.220 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+23:37:10.921 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:37:10.974 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+23:37:11.411 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:37:11.417 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:37:11.419 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:37:11.419 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:37:11.469 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:37:11.469 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1189 ms
+23:37:11.712 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:37:11.804 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+23:37:11.869 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+23:37:12.098 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:37:12.119 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:37:12.358 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@154864f8
+23:37:12.359 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:37:13.318 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:37:13.399 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:37:13.835 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:37:13.862 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+23:37:14.165 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:37:14.181 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+23:37:14.182 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:37:14.192 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 4.443 seconds (process running for 5.606)
+23:37:18.876 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:37:18.876 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:37:18.877 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+23:46:19.667 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:46:19.671 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:46:19.678 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:46:22.437 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 15309 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+23:46:22.442 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+23:46:23.056 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:46:23.108 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+23:46:23.541 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:46:23.548 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:46:23.550 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:46:23.550 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:46:23.599 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:46:23.600 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1119 ms
+23:46:23.770 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:46:23.818 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+23:46:23.851 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+23:46:24.043 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:46:24.065 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:46:24.289 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67dc6b48
+23:46:24.290 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:46:25.131 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:46:25.186 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:46:25.590 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:46:25.612 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+23:46:25.969 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:46:25.989 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+23:46:25.991 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:46:26.001 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 3.906 seconds (process running for 5.212)
+23:46:31.447 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:46:31.447 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:46:31.448 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+23:47:28.186 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.petersokor.TimeSlotManager.service.BookingServiceTest]: BookingServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:47:28.294 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.petersokor.TimeSlotManager.TimeSlotManagerApplication for test class com.petersokor.TimeSlotManager.service.BookingServiceTest
+23:47:28.651 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/mac/.m2/repository/org/json/json/20231013/json-20231013.jar!/org/json/JSONObject.class
+	jar:file:/Users/mac/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+23:47:28.669 [main] INFO  c.p.T.service.BookingServiceTest - Starting BookingServiceTest using Java 21.0.1 with PID 15383 (started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+23:47:28.670 [main] INFO  c.p.T.service.BookingServiceTest - No active profile set, falling back to 1 default profile: "default"
+23:47:29.293 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:47:29.343 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+23:47:29.743 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:47:29.792 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+23:47:29.825 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+23:47:30.047 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:47:30.073 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:47:30.526 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48d44b46
+23:47:30.528 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:47:31.375 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:47:31.433 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:47:31.914 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:47:31.935 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+23:47:32.265 [main] INFO  c.p.T.service.BookingServiceTest - Started BookingServiceTest in 3.803 seconds (process running for 5.006)
+23:47:33.322 [main] INFO  c.p.T.service.BookingService - GET ALL SLOTS AVAILABLE: [com.petersokor.TimeSlotManager.entity.TimeSlot@5a438c0a, com.petersokor.TimeSlotManager.entity.TimeSlot@174da9a0, com.petersokor.TimeSlotManager.entity.TimeSlot@b42d1c8, com.petersokor.TimeSlotManager.entity.TimeSlot@73983f07, com.petersokor.TimeSlotManager.entity.TimeSlot@35fddea2, com.petersokor.TimeSlotManager.entity.TimeSlot@4f876114, com.petersokor.TimeSlotManager.entity.TimeSlot@52d625bd, com.petersokor.TimeSlotManager.entity.TimeSlot@608448e7, com.petersokor.TimeSlotManager.entity.TimeSlot@3bd7829b, com.petersokor.TimeSlotManager.entity.TimeSlot@4faccb34, com.petersokor.TimeSlotManager.entity.TimeSlot@2cb4e4b1, com.petersokor.TimeSlotManager.entity.TimeSlot@6e3552b0, com.petersokor.TimeSlotManager.entity.TimeSlot@6971c6b7, com.petersokor.TimeSlotManager.entity.TimeSlot@402d45c6, com.petersokor.TimeSlotManager.entity.TimeSlot@4b37b01e, com.petersokor.TimeSlotManager.entity.TimeSlot@f53db1a, com.petersokor.TimeSlotManager.entity.TimeSlot@6870e039, com.petersokor.TimeSlotManager.entity.TimeSlot@42599b84, com.petersokor.TimeSlotManager.entity.TimeSlot@34986491, com.petersokor.TimeSlotManager.entity.TimeSlot@2582e213, com.petersokor.TimeSlotManager.entity.TimeSlot@81f9b01, com.petersokor.TimeSlotManager.entity.TimeSlot@20dfe8b2]
+23:47:33.329 [main] INFO  c.p.T.service.BookingService - GET ALL SLOTS AVAILABLE: [com.petersokor.TimeSlotManager.entity.TimeSlot@5a438c0a, com.petersokor.TimeSlotManager.entity.TimeSlot@174da9a0, com.petersokor.TimeSlotManager.entity.TimeSlot@b42d1c8, com.petersokor.TimeSlotManager.entity.TimeSlot@73983f07, com.petersokor.TimeSlotManager.entity.TimeSlot@35fddea2, com.petersokor.TimeSlotManager.entity.TimeSlot@4f876114, com.petersokor.TimeSlotManager.entity.TimeSlot@52d625bd, com.petersokor.TimeSlotManager.entity.TimeSlot@608448e7, com.petersokor.TimeSlotManager.entity.TimeSlot@3bd7829b, com.petersokor.TimeSlotManager.entity.TimeSlot@4faccb34, com.petersokor.TimeSlotManager.entity.TimeSlot@2cb4e4b1, com.petersokor.TimeSlotManager.entity.TimeSlot@6e3552b0, com.petersokor.TimeSlotManager.entity.TimeSlot@6971c6b7, com.petersokor.TimeSlotManager.entity.TimeSlot@402d45c6, com.petersokor.TimeSlotManager.entity.TimeSlot@4b37b01e, com.petersokor.TimeSlotManager.entity.TimeSlot@f53db1a, com.petersokor.TimeSlotManager.entity.TimeSlot@6870e039, com.petersokor.TimeSlotManager.entity.TimeSlot@42599b84, com.petersokor.TimeSlotManager.entity.TimeSlot@34986491, com.petersokor.TimeSlotManager.entity.TimeSlot@2582e213, com.petersokor.TimeSlotManager.entity.TimeSlot@81f9b01, com.petersokor.TimeSlotManager.entity.TimeSlot@20dfe8b2]
+23:47:33.334 [main] INFO  c.p.T.service.BookingService - GET ALL SLOTS AVAILABLE: [com.petersokor.TimeSlotManager.entity.TimeSlot@5a438c0a, com.petersokor.TimeSlotManager.entity.TimeSlot@174da9a0, com.petersokor.TimeSlotManager.entity.TimeSlot@b42d1c8, com.petersokor.TimeSlotManager.entity.TimeSlot@73983f07, com.petersokor.TimeSlotManager.entity.TimeSlot@35fddea2, com.petersokor.TimeSlotManager.entity.TimeSlot@4f876114, com.petersokor.TimeSlotManager.entity.TimeSlot@52d625bd, com.petersokor.TimeSlotManager.entity.TimeSlot@608448e7, com.petersokor.TimeSlotManager.entity.TimeSlot@3bd7829b, com.petersokor.TimeSlotManager.entity.TimeSlot@4faccb34, com.petersokor.TimeSlotManager.entity.TimeSlot@2cb4e4b1, com.petersokor.TimeSlotManager.entity.TimeSlot@6e3552b0, com.petersokor.TimeSlotManager.entity.TimeSlot@6971c6b7, com.petersokor.TimeSlotManager.entity.TimeSlot@402d45c6, com.petersokor.TimeSlotManager.entity.TimeSlot@4b37b01e, com.petersokor.TimeSlotManager.entity.TimeSlot@f53db1a, com.petersokor.TimeSlotManager.entity.TimeSlot@6870e039, com.petersokor.TimeSlotManager.entity.TimeSlot@42599b84, com.petersokor.TimeSlotManager.entity.TimeSlot@34986491, com.petersokor.TimeSlotManager.entity.TimeSlot@2582e213, com.petersokor.TimeSlotManager.entity.TimeSlot@81f9b01, com.petersokor.TimeSlotManager.entity.TimeSlot@20dfe8b2]
+23:47:33.347 [main] INFO  c.p.T.service.BookingService - Booking was canceled for TimeSlot: com.petersokor.TimeSlotManager.entity.TimeSlot@655295bd
+23:47:33.350 [main] WARN  c.p.T.service.BookingService - Booking not found for TimeSlot: com.petersokor.TimeSlotManager.entity.TimeSlot@655295bd
+23:47:33.421 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:47:33.423 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:47:33.430 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:47:48.904 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:47:48.905 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:47:48.911 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:47:50.762 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 15398 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+23:47:50.769 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+23:47:51.386 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:47:51.441 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+23:47:51.891 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:47:51.897 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:47:51.899 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:47:51.899 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:47:51.947 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:47:51.947 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1130 ms
+23:47:52.103 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:47:52.144 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+23:47:52.172 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+23:47:52.394 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:47:52.431 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:47:52.710 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@604f376a
+23:47:52.712 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:47:53.448 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:47:53.505 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:47:53.875 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:47:53.897 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+23:47:54.166 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:47:54.181 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+23:47:54.182 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:47:54.191 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 3.803 seconds (process running for 4.587)
+23:48:35.038 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:48:35.038 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:48:35.039 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+00:12:45.947 [http-nio-8080-exec-9] INFO  c.p.T.service.BookingService - GET ALL SLOTS AVAILABLE: [com.petersokor.TimeSlotManager.entity.TimeSlot@357348c9, com.petersokor.TimeSlotManager.entity.TimeSlot@6600d86c, com.petersokor.TimeSlotManager.entity.TimeSlot@7a7d0447, com.petersokor.TimeSlotManager.entity.TimeSlot@7c53b93e, com.petersokor.TimeSlotManager.entity.TimeSlot@585a4948, com.petersokor.TimeSlotManager.entity.TimeSlot@38f93997, com.petersokor.TimeSlotManager.entity.TimeSlot@2a345df3, com.petersokor.TimeSlotManager.entity.TimeSlot@4bcf9bc2, com.petersokor.TimeSlotManager.entity.TimeSlot@41559bfa, com.petersokor.TimeSlotManager.entity.TimeSlot@309127c6, com.petersokor.TimeSlotManager.entity.TimeSlot@38422fe2, com.petersokor.TimeSlotManager.entity.TimeSlot@fe4a2a3, com.petersokor.TimeSlotManager.entity.TimeSlot@628362ee, com.petersokor.TimeSlotManager.entity.TimeSlot@5b15c66f, com.petersokor.TimeSlotManager.entity.TimeSlot@2137176e, com.petersokor.TimeSlotManager.entity.TimeSlot@54649b99, com.petersokor.TimeSlotManager.entity.TimeSlot@2867a19a, com.petersokor.TimeSlotManager.entity.TimeSlot@2465685d, com.petersokor.TimeSlotManager.entity.TimeSlot@3df087d8, com.petersokor.TimeSlotManager.entity.TimeSlot@4db86bac]
+00:12:46.015 [http-nio-8080-exec-9] INFO  c.p.T.controller.ScheduleController - Application started. Here is the schedule for available time slots: [com.petersokor.TimeSlotManager.entity.TimeSlot@357348c9, com.petersokor.TimeSlotManager.entity.TimeSlot@6600d86c, com.petersokor.TimeSlotManager.entity.TimeSlot@7a7d0447, com.petersokor.TimeSlotManager.entity.TimeSlot@7c53b93e, com.petersokor.TimeSlotManager.entity.TimeSlot@585a4948, com.petersokor.TimeSlotManager.entity.TimeSlot@38f93997, com.petersokor.TimeSlotManager.entity.TimeSlot@2a345df3, com.petersokor.TimeSlotManager.entity.TimeSlot@4bcf9bc2, com.petersokor.TimeSlotManager.entity.TimeSlot@41559bfa, com.petersokor.TimeSlotManager.entity.TimeSlot@309127c6, com.petersokor.TimeSlotManager.entity.TimeSlot@38422fe2, com.petersokor.TimeSlotManager.entity.TimeSlot@fe4a2a3, com.petersokor.TimeSlotManager.entity.TimeSlot@628362ee, com.petersokor.TimeSlotManager.entity.TimeSlot@5b15c66f, com.petersokor.TimeSlotManager.entity.TimeSlot@2137176e, com.petersokor.TimeSlotManager.entity.TimeSlot@54649b99, com.petersokor.TimeSlotManager.entity.TimeSlot@2867a19a, com.petersokor.TimeSlotManager.entity.TimeSlot@2465685d, com.petersokor.TimeSlotManager.entity.TimeSlot@3df087d8, com.petersokor.TimeSlotManager.entity.TimeSlot@4db86bac]
+00:12:50.925 [http-nio-8080-exec-3] INFO  c.p.T.service.BookingService - GET ALL SLOTS AVAILABLE: [com.petersokor.TimeSlotManager.entity.TimeSlot@2e5a489a, com.petersokor.TimeSlotManager.entity.TimeSlot@5ce4236e, com.petersokor.TimeSlotManager.entity.TimeSlot@24063fe8, com.petersokor.TimeSlotManager.entity.TimeSlot@7cd76630, com.petersokor.TimeSlotManager.entity.TimeSlot@35ffa8, com.petersokor.TimeSlotManager.entity.TimeSlot@7db75393, com.petersokor.TimeSlotManager.entity.TimeSlot@685bdab2, com.petersokor.TimeSlotManager.entity.TimeSlot@2ffad76f, com.petersokor.TimeSlotManager.entity.TimeSlot@9da587, com.petersokor.TimeSlotManager.entity.TimeSlot@477155cc, com.petersokor.TimeSlotManager.entity.TimeSlot@714999da, com.petersokor.TimeSlotManager.entity.TimeSlot@8f16933, com.petersokor.TimeSlotManager.entity.TimeSlot@652d4437, com.petersokor.TimeSlotManager.entity.TimeSlot@283fa26b, com.petersokor.TimeSlotManager.entity.TimeSlot@150579ff, com.petersokor.TimeSlotManager.entity.TimeSlot@163e329d, com.petersokor.TimeSlotManager.entity.TimeSlot@193dd091, com.petersokor.TimeSlotManager.entity.TimeSlot@4c441527, com.petersokor.TimeSlotManager.entity.TimeSlot@72b047d1]
+00:12:50.968 [http-nio-8080-exec-3] INFO  c.p.T.controller.ScheduleController - Application started. Here is the schedule for available time slots: [com.petersokor.TimeSlotManager.entity.TimeSlot@2e5a489a, com.petersokor.TimeSlotManager.entity.TimeSlot@5ce4236e, com.petersokor.TimeSlotManager.entity.TimeSlot@24063fe8, com.petersokor.TimeSlotManager.entity.TimeSlot@7cd76630, com.petersokor.TimeSlotManager.entity.TimeSlot@35ffa8, com.petersokor.TimeSlotManager.entity.TimeSlot@7db75393, com.petersokor.TimeSlotManager.entity.TimeSlot@685bdab2, com.petersokor.TimeSlotManager.entity.TimeSlot@2ffad76f, com.petersokor.TimeSlotManager.entity.TimeSlot@9da587, com.petersokor.TimeSlotManager.entity.TimeSlot@477155cc, com.petersokor.TimeSlotManager.entity.TimeSlot@714999da, com.petersokor.TimeSlotManager.entity.TimeSlot@8f16933, com.petersokor.TimeSlotManager.entity.TimeSlot@652d4437, com.petersokor.TimeSlotManager.entity.TimeSlot@283fa26b, com.petersokor.TimeSlotManager.entity.TimeSlot@150579ff, com.petersokor.TimeSlotManager.entity.TimeSlot@163e329d, com.petersokor.TimeSlotManager.entity.TimeSlot@193dd091, com.petersokor.TimeSlotManager.entity.TimeSlot@4c441527, com.petersokor.TimeSlotManager.entity.TimeSlot@72b047d1]
+00:37:41.907 [http-nio-8080-exec-1] INFO  c.p.T.service.BookingService - GET ALL SLOTS AVAILABLE: [com.petersokor.TimeSlotManager.entity.TimeSlot@ebf9e7a, com.petersokor.TimeSlotManager.entity.TimeSlot@3d5c43e1, com.petersokor.TimeSlotManager.entity.TimeSlot@7bfaa4ca, com.petersokor.TimeSlotManager.entity.TimeSlot@425c3037, com.petersokor.TimeSlotManager.entity.TimeSlot@30e23a48, com.petersokor.TimeSlotManager.entity.TimeSlot@6f7e24fe, com.petersokor.TimeSlotManager.entity.TimeSlot@410c012f, com.petersokor.TimeSlotManager.entity.TimeSlot@62724cb1, com.petersokor.TimeSlotManager.entity.TimeSlot@43e30acd, com.petersokor.TimeSlotManager.entity.TimeSlot@5d249f9b, com.petersokor.TimeSlotManager.entity.TimeSlot@7c80e869, com.petersokor.TimeSlotManager.entity.TimeSlot@c67248c, com.petersokor.TimeSlotManager.entity.TimeSlot@5709f2af, com.petersokor.TimeSlotManager.entity.TimeSlot@2ea87792, com.petersokor.TimeSlotManager.entity.TimeSlot@5590018e, com.petersokor.TimeSlotManager.entity.TimeSlot@60e60cf4, com.petersokor.TimeSlotManager.entity.TimeSlot@78e216cd, com.petersokor.TimeSlotManager.entity.TimeSlot@151bfaa4, com.petersokor.TimeSlotManager.entity.TimeSlot@405215f8]
+00:37:41.946 [http-nio-8080-exec-1] INFO  c.p.T.controller.ScheduleController - Application started. Here is the schedule for available time slots: [com.petersokor.TimeSlotManager.entity.TimeSlot@ebf9e7a, com.petersokor.TimeSlotManager.entity.TimeSlot@3d5c43e1, com.petersokor.TimeSlotManager.entity.TimeSlot@7bfaa4ca, com.petersokor.TimeSlotManager.entity.TimeSlot@425c3037, com.petersokor.TimeSlotManager.entity.TimeSlot@30e23a48, com.petersokor.TimeSlotManager.entity.TimeSlot@6f7e24fe, com.petersokor.TimeSlotManager.entity.TimeSlot@410c012f, com.petersokor.TimeSlotManager.entity.TimeSlot@62724cb1, com.petersokor.TimeSlotManager.entity.TimeSlot@43e30acd, com.petersokor.TimeSlotManager.entity.TimeSlot@5d249f9b, com.petersokor.TimeSlotManager.entity.TimeSlot@7c80e869, com.petersokor.TimeSlotManager.entity.TimeSlot@c67248c, com.petersokor.TimeSlotManager.entity.TimeSlot@5709f2af, com.petersokor.TimeSlotManager.entity.TimeSlot@2ea87792, com.petersokor.TimeSlotManager.entity.TimeSlot@5590018e, com.petersokor.TimeSlotManager.entity.TimeSlot@60e60cf4, com.petersokor.TimeSlotManager.entity.TimeSlot@78e216cd, com.petersokor.TimeSlotManager.entity.TimeSlot@151bfaa4, com.petersokor.TimeSlotManager.entity.TimeSlot@405215f8]
+00:41:54.607 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+00:41:54.609 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:41:54.613 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:41:57.814 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 16181 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+00:41:57.817 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+00:41:58.341 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+00:41:58.387 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+00:41:58.789 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+00:41:58.797 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:41:58.799 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:41:58.799 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+00:41:58.847 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:41:58.848 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 988 ms
+00:41:58.999 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:41:59.036 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+00:41:59.059 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+00:41:59.232 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+00:41:59.250 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:41:59.479 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@702f4124
+00:41:59.480 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:42:00.210 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+00:42:00.268 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:42:00.595 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:42:00.616 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+00:42:00.969 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:42:00.984 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+00:42:00.986 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+00:42:00.995 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 3.47 seconds (process running for 4.184)
+00:42:01.772 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:42:01.772 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:42:01.773 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+00:45:06.288 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+00:45:06.290 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:45:06.296 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:45:09.007 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 16231 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+00:45:09.012 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+00:45:09.603 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+00:45:09.660 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces.
+00:45:10.086 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+00:45:10.092 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:45:10.094 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:45:10.094 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+00:45:10.145 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:45:10.146 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1076 ms
+00:45:10.334 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:45:10.379 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+00:45:10.409 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+00:45:10.628 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+00:45:10.649 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:45:10.889 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57f2e67
+00:45:10.891 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:45:11.634 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+00:45:11.695 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:45:12.180 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:45:12.203 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+00:45:12.483 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:45:12.496 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+00:45:12.498 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+00:45:12.506 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 3.895 seconds (process running for 5.23)
+00:45:20.069 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:45:20.069 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:45:20.071 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+00:47:52.552 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+00:47:52.554 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:47:52.559 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:47:55.113 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 16285 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+00:47:55.121 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+00:47:55.666 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+00:47:55.717 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+00:47:56.125 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+00:47:56.131 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:47:56.132 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:47:56.132 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+00:47:56.179 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:47:56.179 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1008 ms
+00:47:56.327 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:47:56.367 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+00:47:56.397 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+00:47:56.574 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+00:47:56.592 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:47:56.821 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26f5e45d
+00:47:56.823 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:47:57.639 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+00:47:57.691 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:47:57.988 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:47:58.003 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+00:47:58.250 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:47:58.263 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+00:47:58.265 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+00:47:58.273 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 3.578 seconds (process running for 4.836)
+00:48:01.067 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:48:01.067 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:48:01.068 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+00:48:41.511 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+00:48:41.512 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:48:41.518 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:48:44.029 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 16305 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+00:48:44.034 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+00:48:44.627 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+00:48:44.710 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces.
+00:48:45.135 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+00:48:45.141 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:48:45.143 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:48:45.143 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+00:48:45.190 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:48:45.190 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1105 ms
+00:48:45.337 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:48:45.377 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+00:48:45.405 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+00:48:45.588 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+00:48:45.610 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:48:45.845 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57f2e67
+00:48:45.847 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:48:46.546 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+00:48:46.599 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:48:46.917 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:48:46.933 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+00:48:47.183 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:48:47.197 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+00:48:47.198 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+00:48:47.207 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 3.569 seconds (process running for 4.917)
+00:48:50.398 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:48:50.398 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:48:50.399 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+00:51:16.313 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+00:51:16.315 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:51:16.321 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:51:18.075 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 16353 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+00:51:18.080 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+00:51:18.626 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+00:51:18.677 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+00:51:19.080 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+00:51:19.086 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:51:19.087 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:51:19.088 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+00:51:19.133 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:51:19.133 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1009 ms
+00:51:19.277 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:51:19.325 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+00:51:19.354 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+00:51:19.528 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+00:51:19.546 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:51:19.758 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11cadb32
+00:51:19.760 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:51:20.455 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+00:51:20.505 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:51:20.806 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:51:20.821 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+00:51:21.096 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:51:21.110 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+00:51:21.111 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+00:51:21.119 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 3.391 seconds (process running for 4.125)
+00:51:27.834 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:51:27.834 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:51:27.835 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+00:52:06.807 [http-nio-8080-exec-3] INFO  c.p.T.service.BookingService - GET ALL SLOTS AVAILABLE: [com.petersokor.TimeSlotManager.entity.TimeSlot@4296bb52, com.petersokor.TimeSlotManager.entity.TimeSlot@16a735dc, com.petersokor.TimeSlotManager.entity.TimeSlot@18f8df73, com.petersokor.TimeSlotManager.entity.TimeSlot@ae4ee95, com.petersokor.TimeSlotManager.entity.TimeSlot@279cb54d, com.petersokor.TimeSlotManager.entity.TimeSlot@83a7db7, com.petersokor.TimeSlotManager.entity.TimeSlot@56673884, com.petersokor.TimeSlotManager.entity.TimeSlot@7b5ae49b, com.petersokor.TimeSlotManager.entity.TimeSlot@392e1060, com.petersokor.TimeSlotManager.entity.TimeSlot@62221537, com.petersokor.TimeSlotManager.entity.TimeSlot@deea2ef, com.petersokor.TimeSlotManager.entity.TimeSlot@21bce1f5, com.petersokor.TimeSlotManager.entity.TimeSlot@68d858b2, com.petersokor.TimeSlotManager.entity.TimeSlot@1a216333, com.petersokor.TimeSlotManager.entity.TimeSlot@ee2644a, com.petersokor.TimeSlotManager.entity.TimeSlot@1f4ba65e, com.petersokor.TimeSlotManager.entity.TimeSlot@7f91ccb6, com.petersokor.TimeSlotManager.entity.TimeSlot@76605e0b, com.petersokor.TimeSlotManager.entity.TimeSlot@6bbdb4b9]
+00:52:06.875 [http-nio-8080-exec-3] INFO  c.p.T.controller.ScheduleController - Application started. Here is the schedule for available time slots: [com.petersokor.TimeSlotManager.entity.TimeSlot@4296bb52, com.petersokor.TimeSlotManager.entity.TimeSlot@16a735dc, com.petersokor.TimeSlotManager.entity.TimeSlot@18f8df73, com.petersokor.TimeSlotManager.entity.TimeSlot@ae4ee95, com.petersokor.TimeSlotManager.entity.TimeSlot@279cb54d, com.petersokor.TimeSlotManager.entity.TimeSlot@83a7db7, com.petersokor.TimeSlotManager.entity.TimeSlot@56673884, com.petersokor.TimeSlotManager.entity.TimeSlot@7b5ae49b, com.petersokor.TimeSlotManager.entity.TimeSlot@392e1060, com.petersokor.TimeSlotManager.entity.TimeSlot@62221537, com.petersokor.TimeSlotManager.entity.TimeSlot@deea2ef, com.petersokor.TimeSlotManager.entity.TimeSlot@21bce1f5, com.petersokor.TimeSlotManager.entity.TimeSlot@68d858b2, com.petersokor.TimeSlotManager.entity.TimeSlot@1a216333, com.petersokor.TimeSlotManager.entity.TimeSlot@ee2644a, com.petersokor.TimeSlotManager.entity.TimeSlot@1f4ba65e, com.petersokor.TimeSlotManager.entity.TimeSlot@7f91ccb6, com.petersokor.TimeSlotManager.entity.TimeSlot@76605e0b, com.petersokor.TimeSlotManager.entity.TimeSlot@6bbdb4b9]
+00:52:32.263 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+00:52:32.265 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:52:32.271 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:52:33.975 [main] INFO  c.p.T.TimeSlotManagerApplication - Starting TimeSlotManagerApplication using Java 17.0.9 with PID 16390 (/Users/mac/EntJavaRepos/TimeSlotManager/target/classes started by mac in /Users/mac/EntJavaRepos/TimeSlotManager)
+00:52:33.978 [main] INFO  c.p.T.TimeSlotManagerApplication - No active profile set, falling back to 1 default profile: "default"
+00:52:34.510 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+00:52:34.556 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+00:52:34.953 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+00:52:34.959 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:52:34.960 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:52:34.960 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+00:52:35.005 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:52:35.005 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 977 ms
+00:52:35.163 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:52:35.202 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+00:52:35.229 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+00:52:35.411 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+00:52:35.429 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:52:35.656 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11cadb32
+00:52:35.658 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:52:36.373 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+00:52:36.429 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:52:36.753 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:52:36.771 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+00:52:37.028 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:52:37.041 [main] INFO  c.p.TimeSlotManager.controller.LogIn - method init() is working
+00:52:37.043 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+00:52:37.052 [main] INFO  c.p.T.TimeSlotManagerApplication - Started TimeSlotManagerApplication in 3.378 seconds (process running for 4.076)
+00:52:43.337 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:52:43.337 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:52:43.339 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+00:52:48.377 [http-nio-8080-exec-3] INFO  c.p.T.service.BookingService - GET ALL SLOTS AVAILABLE: [com.petersokor.TimeSlotManager.entity.TimeSlot@32379786, com.petersokor.TimeSlotManager.entity.TimeSlot@2fdea1d9, com.petersokor.TimeSlotManager.entity.TimeSlot@e475fa0, com.petersokor.TimeSlotManager.entity.TimeSlot@4b6816ed, com.petersokor.TimeSlotManager.entity.TimeSlot@64edf320, com.petersokor.TimeSlotManager.entity.TimeSlot@3e67460d, com.petersokor.TimeSlotManager.entity.TimeSlot@ae9a43e, com.petersokor.TimeSlotManager.entity.TimeSlot@1bd04f0, com.petersokor.TimeSlotManager.entity.TimeSlot@ac29314, com.petersokor.TimeSlotManager.entity.TimeSlot@e91fb6f, com.petersokor.TimeSlotManager.entity.TimeSlot@491e76d7, com.petersokor.TimeSlotManager.entity.TimeSlot@20ed7180, com.petersokor.TimeSlotManager.entity.TimeSlot@3e290cba, com.petersokor.TimeSlotManager.entity.TimeSlot@3f62c293, com.petersokor.TimeSlotManager.entity.TimeSlot@38603a84, com.petersokor.TimeSlotManager.entity.TimeSlot@113f0141, com.petersokor.TimeSlotManager.entity.TimeSlot@11546b93, com.petersokor.TimeSlotManager.entity.TimeSlot@a8c516b, com.petersokor.TimeSlotManager.entity.TimeSlot@3381fea4]
+00:52:48.439 [http-nio-8080-exec-3] INFO  c.p.T.controller.ScheduleController - Application started. Here is the schedule for available time slots: [com.petersokor.TimeSlotManager.entity.TimeSlot@32379786, com.petersokor.TimeSlotManager.entity.TimeSlot@2fdea1d9, com.petersokor.TimeSlotManager.entity.TimeSlot@e475fa0, com.petersokor.TimeSlotManager.entity.TimeSlot@4b6816ed, com.petersokor.TimeSlotManager.entity.TimeSlot@64edf320, com.petersokor.TimeSlotManager.entity.TimeSlot@3e67460d, com.petersokor.TimeSlotManager.entity.TimeSlot@ae9a43e, com.petersokor.TimeSlotManager.entity.TimeSlot@1bd04f0, com.petersokor.TimeSlotManager.entity.TimeSlot@ac29314, com.petersokor.TimeSlotManager.entity.TimeSlot@e91fb6f, com.petersokor.TimeSlotManager.entity.TimeSlot@491e76d7, com.petersokor.TimeSlotManager.entity.TimeSlot@20ed7180, com.petersokor.TimeSlotManager.entity.TimeSlot@3e290cba, com.petersokor.TimeSlotManager.entity.TimeSlot@3f62c293, com.petersokor.TimeSlotManager.entity.TimeSlot@38603a84, com.petersokor.TimeSlotManager.entity.TimeSlot@113f0141, com.petersokor.TimeSlotManager.entity.TimeSlot@11546b93, com.petersokor.TimeSlotManager.entity.TimeSlot@a8c516b, com.petersokor.TimeSlotManager.entity.TimeSlot@3381fea4]

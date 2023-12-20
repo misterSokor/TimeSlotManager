@@ -23,8 +23,6 @@ public class TimeSlotManagerApplication {
 //	}
 
 	@Bean
-
-
 	public ServletRegistrationBean myServletRegistration() {
 		ServletRegistrationBean registrationBean =
 				new ServletRegistrationBean(new LogIn(), "/login");

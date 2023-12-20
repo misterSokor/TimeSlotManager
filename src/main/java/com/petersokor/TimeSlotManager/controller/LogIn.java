@@ -23,7 +23,8 @@ import java.util.Properties;
 public class LogIn extends HttpServlet implements PropertiesLoader {
 
     Properties properties;
-    private final Logger logger = (Logger) LogManager.getLogger(this.getClass());
+    private final Logger logger = LogManager.getLogger(LogIn.class);
+
 
     public static String CLIENT_ID;
     public static String LOGIN_URL;
@@ -32,7 +33,7 @@ public class LogIn extends HttpServlet implements PropertiesLoader {
     @Override
     public void init() throws ServletException {
         super.init();
-        logger.info("NULL from init method");
+        logger.info("method init() is working");
         loadProperties();
     }
 
