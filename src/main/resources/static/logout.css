@@ -1,0 +1,26 @@
+/* logout.css */
+
+body {
+    flex-direction: column; /* Updated property for arranging elements in a column */
+}
+
+h3 {
+    color: #154b5b; /* Color of the Hello heading */
+    margin-bottom: 10px; /* Adding a small space after the heading */
+}
+
+p {
+    margin-bottom: 10px; /* Spacing between lines in the <p> tag */
+}
+
+button {
+    background-color: #98c1d9;
+    margin-top: 10px;
+    font-size: 18px; /* Button font size */
+    padding: 10px 40px; /* Pixel values for vertical and horizontal padding */
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #ffb38e;
+}

@@ -1,0 +1,15 @@
+/* error.css */
+
+body {
+    flex-direction: column; /* Updated property for arranging elements in a column */
+}
+
+h1 {
+    color: #ff020c; /* Color of the Hello heading */
+    margin-bottom: 10px; /* Adding a small space after the heading */
+}
+
+p {
+    margin-bottom: 10px; /* Spacing between lines in the <p> tag */
+    padding: 0 25px 0 25px;
+}
