@@ -4,9 +4,10 @@ body {
     flex-direction: column; /* Updated property for arranging elements in a column */
 }
 
-h2 {
-    color: #d8580e; /* Color of the Hello heading */
-    margin-bottom: 10px; /* Adding a small space after the heading */
+img {
+    margin-top: 35px ;
+    max-width: 100%;
+    height: auto;
 }
 
 p {
@@ -21,8 +22,11 @@ button {
     font-size: 18px; /* Button font size */
     padding: 10px 40px; /* Pixel values for vertical and horizontal padding */
     box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 10px;
 }
 
 button:hover {
     background-color: #ffb38e;
 }
+

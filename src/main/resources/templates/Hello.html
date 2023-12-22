@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="">
 <head>
@@ -11,12 +12,14 @@
     <title>Welcome</title>
 </head>
 <body>
-<h2>Hello <span th:text="${userName}"></span>!</h2>
+<img src="/images/hello.png" alt="hello">
+<h2> <span th:text="${userName}"></span></h2>
 <p>
     I'll be glad to see you in my class.
 </p>
 
 <p>Please choose a convenient time from the schedule:</p>
+<br>
 <a th:href="@{/schedule}">
     <button>Go to Schedule</button>
 </a>

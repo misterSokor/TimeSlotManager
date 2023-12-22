@@ -16,9 +16,13 @@
 </div>
 
 <div th:unless="${not #strings.isEmpty(userName)}">
-    <h3>Hi! </h3>
+    <h3></h3>
     <p>Please register:</p>
-    <button onclick="window.location.href='/login'">Log in</button>
+    <a th:href="@{/login}">
+        <button>Log in</button>
+    </a>
 </div>
+<br><br>
+<img src="/images/pianoScript.png" alt="">
 </body>
 </html>

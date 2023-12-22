@@ -1,11 +1,13 @@
 /* main.css */
 body {
-    background: #c8ebf1;
+    /*background: #c8ebf1;*/
+    background: #d9ebec;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 25px;
+    color: #212a30;
     margin: 0;
 }
 
@@ -21,4 +23,5 @@ body {
         font-size: 20px;
         margin: 0;
     }
+
 }

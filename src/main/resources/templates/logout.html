@@ -12,10 +12,17 @@
 </head>
 <body>
 <div class="container">
-    <h2>Goodbye!</h2>
+    <img src="/images/goodbye.png">
+</div>
+<div>
     <p>Hope to see you again.</p>
     <p> If you'd like to log in, click</p>
-    <button onclick="window.location.href='/login'">Log in</button>
+</div>
+<br>
+<div>
+    <a th:href="@{/login}">
+        <button>Log in</button>
+    </a>
 </div>
 </body>
 </html>
