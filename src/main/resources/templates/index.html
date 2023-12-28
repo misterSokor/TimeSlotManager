@@ -8,12 +8,9 @@
 
     <link rel="stylesheet" type="text/css" href="/main.css">
     <link rel="stylesheet" type="text/css" href="/index.css">
-    <title>Document</title>
+    <title>register page</title>
 </head>
 <body>
-<div th:if="${not #strings.isEmpty(userName)}">
-    <h3>Welcome, ${userName}!</h3>
-</div>
 
 <div th:unless="${not #strings.isEmpty(userName)}">
     <h3></h3>
@@ -23,6 +20,6 @@
     </a>
 </div>
 <br><br>
-<img src="/images/pianoScript.png" alt="">
+<img src="/images/pianoScript.png" alt="piano image">
 </body>
 </html>

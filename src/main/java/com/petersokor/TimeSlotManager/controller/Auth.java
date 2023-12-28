@@ -46,6 +46,8 @@ import java.util.stream.Collectors;
 )
 @Component
 public class Auth extends HttpServlet implements PropertiesLoader {
+    Properties properties;
+    private final Logger logger = LogManager.getLogger(Auth.class);
 
     private String CLIENT_ID;
     private String CLIENT_SECRET;
@@ -54,8 +56,6 @@ public class Auth extends HttpServlet implements PropertiesLoader {
     private String REGION;
     private String POOL_ID;
     private Keys jwks;
-
-    private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
     public void init() throws ServletException {
@@ -69,7 +69,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
 protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     String authCode = req.getParameter("code");
     // to see what came from Cognito
-    logger.info("Starting doGet method with auth code: " + authCode); //
+    logger.info("Starting doGet method with auth code: " + authCode);
 
     String userName;
 
@@ -84,11 +84,18 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
             try {
                 TokenResponse tokenResponse = getToken(authRequest);
                 logger.info("Received token response: " + tokenResponse);
+
+
+
                 userName = validate(tokenResponse);
-                req.setAttribute("userName", userName);
+                logger.info("UserName after validation: " + userName);
 
                 // This link is shown after successful authentication
+//                resp.sendRedirect("/Hello");
+                req.getSession().setAttribute("userName", userName);
                 resp.sendRedirect("/Hello");
+
+
             } catch (IOException | InterruptedException e) {
                 logger.error("Error getting or validating the token: " + e.getMessage(), e);
                 resp.sendRedirect("error.html");
@@ -100,6 +107,8 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
     }
 }
 
+
+
     private TokenResponse getToken(HttpRequest authRequest) throws IOException, InterruptedException {
         try {
             HttpClient client = HttpClient.newHttpClient();
@@ -107,6 +116,8 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 
             logger.info("Response headers: " + response.headers().toString());
             logger.info("Response body: " + response.body().toString());
+            logger.info("Token response body: " + response.body());
+
 
             ObjectMapper mapper = new ObjectMapper();
             TokenResponse tokenResponse = mapper.readValue(response.body().toString(), TokenResponse.class);
@@ -175,24 +186,7 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
         HttpRequest request = HttpRequest.newBuilder().uri(URI.create(OAUTH_URL))
                 .headers("Content-Type", "application/x-www-form-urlencoded", "Authorization", "Basic " + encoding)
                 .POST(HttpRequest.BodyPublishers.ofString(form)).build();
-
         return request;
-    }
-
-    private void loadKey() {
-        try {
-            ObjectMapper mapper = new ObjectMapper();
-            URL jwksURL = new URL(String.format("https://cognito-idp.%s.amazonaws.com/%s/.well-known/jwks.json", REGION, POOL_ID));
-            File jwksFile = new File("jwks.json");
-            FileUtils.copyURLToFile(jwksURL, jwksFile);
-            jwks = mapper.readValue(jwksFile, Keys.class);
-            logger.debug("Keys are loaded. Here's e: " + jwks.getKeys().get(0).getE());
-        } catch (IOException ioException) {
-            logger.info("Cannot load JSON: " + ioException.getMessage(),
-                    ioException);
-        } catch (Exception e) {
-            logger.info("Error loading JSON: " + e.getMessage(), e);
-        }
     }
 
     private void loadProperties() {
@@ -209,6 +203,24 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
             logger.error("Cannot load properties: " + ioException.getMessage(), ioException);
         } catch (Exception e) {
             logger.error("Error loading properties: " + e.getMessage(), e);
+        }
+    }
+
+    private void loadKey() {
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            URL jwksURL = new URL(String.format("https://cognito-idp.%s.amazonaws.com/%s/.well-known/jwks.json", REGION, POOL_ID));
+            File jwksFile = new File("jwks.json");
+
+            FileUtils.copyURLToFile(jwksURL, jwksFile);
+
+            jwks = mapper.readValue(jwksFile, Keys.class);
+            logger.info("Keys are loaded. Here's e: " + jwks.getKeys().get(0).getE());
+        } catch (IOException ioException) {
+            logger.info("Cannot load JSON: " + ioException.getMessage(),
+                    ioException);
+        } catch (Exception e) {
+            logger.info("Error loading JSON: " + e.getMessage(), e);
         }
     }
 }

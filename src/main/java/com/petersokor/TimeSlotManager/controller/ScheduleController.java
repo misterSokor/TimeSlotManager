@@ -21,7 +21,8 @@ import java.util.List;
 */
 @Controller
 public class ScheduleController {
-    private final Logger logger = (Logger) LogManager.getLogger(this.getClass());
+    private final Logger logger = LogManager.getLogger(ScheduleController.class);
+
 
     @Autowired
     private BookingService bookingService;

@@ -12,16 +12,6 @@ public class TimeSlotManagerApplication {
 		SpringApplication.run(TimeSlotManagerApplication.class, args);
 	}
 
-//	@Bean
-//	public WebMvcConfigurer configurer() {
-//		return new WebMvcConfigurer() {
-//			@Override
-//			public void addViewControllers(ViewControllerRegistry registry) {
-//				registry.addViewController("/").setViewName("index");
-//			}
-//		};
-//	}
-
 	@Bean
 	public ServletRegistrationBean myServletRegistration() {
 		ServletRegistrationBean registrationBean =
